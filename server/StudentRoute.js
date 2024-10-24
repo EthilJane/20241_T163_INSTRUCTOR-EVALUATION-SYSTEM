@@ -1,16 +1,18 @@
 import express from 'express'
 const express = require("express");
 const router = express.Router();
-import{}
-
-let gyjj = [];
+// import{}
 
 
-//Student Login
-router.post('/login',Studentlogin);
 
-//Search the particular instructor to be evaluated
-router.get('/search', Search);
+//Student Signin
+router.post('/Signin',Studentsignin);
 
+//Access the Google Evaluiation Form
+router.get('/evaluation form', G-Evaluationform);
 
-router
+//Fillout the evaluation form
+router.put('/Fill in', Fillout);
+
+//Submit the form
+router.post('/Submit', Submit )

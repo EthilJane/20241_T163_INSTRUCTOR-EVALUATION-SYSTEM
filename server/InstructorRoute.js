@@ -1,11 +1,13 @@
 import express from 'express'
 const router = express.Router();
+// import{postInstructorlogin,postRegisteration}
+
 
 //Instructor Login
 router.post('/login',Instructorlogin);
 
 //Instructor Register
-router.post('/register',Instructorlogin)
+router.post('/register',Registeration)
 
 //View Profile
 router.get('/profile', auth, InstructoProfile)
