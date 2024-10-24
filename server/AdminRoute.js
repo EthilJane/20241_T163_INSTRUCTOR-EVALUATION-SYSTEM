@@ -5,7 +5,7 @@ const router = express.Router();
 router.post('/login',adminlogin)
 
 //Viewing Profile
-router.get('/profile', auth, viewProfile)
+router.get('/profile', getProfile)
 
-//Admin route to add Evaluation form details
-router.post('/evaluation_form', auth, addEvaluationForm)
+//Add evaluation form
+router.post('/evaluation_form', postEvaluationForm)

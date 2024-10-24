@@ -7,16 +7,16 @@ const router = express.Router();
 router.post('/login',Instructorlogin);
 
 //Instructor Register
-router.post('/register',Registeration)
+router.post('/register',postRegisteration);
 
 //View Profile
-router.get('/profile', auth, InstructoProfile)
+router.get('/profile', getProfile);
 
 //Add Instructor Information
-router.post('/evaluation_form', auth, addEvaluationForm)
+router.post('/evaluation_form', postInformation);
 
 //View the list of evaluation
-router.get('/evaluation_form', auth, addEvaluationForm)
+router.get('/evaluation_form', getEvaluationForm);
 
 //View the comment section
-router.get('/evaluation_form', auth, addEvaluationForm)
+router.get('/evaluation_form', getCommentsection);

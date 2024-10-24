@@ -9,10 +9,11 @@ const router = express.Router();
 router.post('/Signin',Studentsignin);
 
 //Access the Google Evaluiation Form
-router.get('/evaluation form', G-Evaluationform);
+router.get('/evaluation form', getEvaluationform);
 
 //Fillout the evaluation form
-router.put('/Fill in', Fillout);
+router.put('/Fill in', putFillout);
+
 
 //Submit the form
-router.post('/Submit', Submit )
+router.post('/Submit', postSubmit )
