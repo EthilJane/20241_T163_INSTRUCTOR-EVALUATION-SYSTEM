@@ -1,45 +1,16 @@
-import express from 'express'
-import mongoose from 'mongoose'
-import cors from 'cors'
-import dotenv from 'dotenv'
-
+const express = require('express')
 const app = express()
-dotenv.config()
+var bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
-// app.listen(8000,() =>{
-//     console.log('We can do this')
-// })
+const AdminRoute = require("./Routes/AdminRoute")
+app.use(AdminRoute);
 
-// const app = express()
+const InstructorRoute = require("./Routes/InstructorRoute")
+app.use(InstructorRouteRoute);
 
-// app.listen(8000,() =>{
-//     console.log('You Can DO It')
-// })
-// //routes
-// import StudentRoute from './routes/StudentRoute.js'
+const StudentRoute = require("./Routes/StudentRoute")
+app.use(StudentRouteRoute);
 
-// //API's
-// app.use('/api/student', StudentRoute);
-
-const port = process.env.PORT
-//Establishing Connection
-const connect = async() =>{
-    try{
-        await mongoose.connect(process.env.MONGODB)
-    }catch(erroe){
-        console.log(error);
-    }
-}
-
-mongoose.connection.on('disconnected', ()=>{
-    console.log('Disconnected from MongoDB')
-})
-
-mongoose.connection.on('Connected', ()=>{
-    console.log('Connected from MongoDB');
-})
-
-app.listen(port, () => {
-    connect();
-    console.log('Connected to PORT ${port}');
-})
+app.listen(3000)
