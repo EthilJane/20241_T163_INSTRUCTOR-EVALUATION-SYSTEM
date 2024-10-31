@@ -5,9 +5,6 @@ import express from 'express'
 //Instructor Login
 router.post('/login',login);
 
-//Instructor Register
-router.post('/register',register);
-
 //View Profile
 router.get('/profile', viewProfile);
 
@@ -17,6 +14,4 @@ router.post('/evaluation_form', Information);
 //View the list of evaluation
 router.get('/evaluations', viewEvaluation);
 
-//View the comment section
-router.get('/comments/:sectionId', viewComment);
-module.exports = router;
+module.exports = router; 
