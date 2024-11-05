@@ -7,15 +7,16 @@ import { login, confirmation, firstpage, secondpage, thirdpage, fourthpage, fift
 //Access the link provided through email
 // router.get('/getlink', accessLink);
 
-//student login 
+//student login/functional requirements
 router.post('/login',StudentController.login);
 
-//Confirmation as a student before to proceed
+//Confirmation as a student before to proceed/functional requirements
 router.post('/confirmation/id', StudentController.confirmation)
 
-//Fill out the first page
+//Fill out the first page/functional requirements
 router.post('/fillout1st_page',StudentController.firstpage);
 
+//The following are functional requirements
 //Lesson Presentation rating
 router.post('/Lesson_Presentation',StudentController.secondpage);
 

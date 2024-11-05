@@ -5,16 +5,16 @@ import { login, profile, createEvaluation, generateLink, viewRatings  } from "..
 
                 //ADMIN ROUTES
 
-//Admin Login
+//Admin Login/functional requirements
 router.post('/login',AdminController.login);
 
 //Viewing Profile
 router.get('/profile', AdminController.profile);
 
-//Add evaluation form
+//Add evaluation form/functional requirements
 router.post('/evaluation/create', AdminController.createEvaluation);
 
-//Route to generate link for evaluations
+//Route to generate link for evaluations/functional requirements
 router.post('/evaluation/generate-link', AdminController.generateLink);
 
 //Route to view ratings from student evaluations
