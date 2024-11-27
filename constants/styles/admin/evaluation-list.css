@@ -1,0 +1,26 @@
+
+.table-container{
+    width: 100%;
+    border:1px solid black;
+    margin-top: 10px;
+}
+.table-container > table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+
+
+}
+.table-container > table  th{
+   font-weight: bold;
+   padding: 10px;
+   max-width: 100px;
+}
+
+.table-container > table  td{
+    font-weight: bold;
+    padding: 10px;
+    max-width: 200px;
+    word-break: break-all;
+    text-align: center;
+ }

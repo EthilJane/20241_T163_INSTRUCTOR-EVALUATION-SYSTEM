@@ -1,0 +1,3 @@
+-- database: ./C:/path/to/database.db
+SELECT `id`, `username`, `passwordHash`, `role`, `creationDate`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`username` LIKE 'nathaniel0614@gmail.com' LIMIT 1;   
+

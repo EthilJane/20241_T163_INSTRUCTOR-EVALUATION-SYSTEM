@@ -1,0 +1,91 @@
+.eval-form-container{
+    position: fixed;
+    inset: 0;
+    background-color: #161515b6;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.eval-form-main{
+
+    background-color: #2142b3;
+    height: 80%;
+    width: 25%;
+    padding: 1em 0 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+.eval-form{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    flex: 1;
+}
+.form-label{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #DAE3F3;
+}
+.save-button-container{
+    display: flex;
+    justify-content: end;
+    margin-right: 2em;
+}
+
+.eval-form-main  label{
+    color: #DAE3F3;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+
+.eval-form-main  input , .date-picker{
+    margin-top: 10px;
+    padding: 0 10px;
+    text-align: left;
+    transition-property: border-color, box-shadow, white;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    background-color: #FFFFFF;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #DAE3F3;
+    border-radius: 0px;
+    color: #272C34;
+    width: 100%;
+
+    cursor: text;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    height: 30px;
+}
+
+
+.eval-form-main  input:hover ,.date-picker:hover  {
+    box-shadow: 0px 2px 4px rgb(39 44 52 / 12%);
+}
+.eval-form-main input:focus , .date-picker:focus {
+    transition-property: border-color, box-shadow, white;
+    border-color: #39414D;
+    outline: 0px;
+    box-shadow: 0 0 0 3px #c5d2e7;
+}
+
+.close-button{
+    display: flex;
+    justify-content: end;
+    margin-right: 1em;
+}
+.close-button > button{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    font-size: 2em;
+    font-weight: bold;
+    color:red;
+    cursor: pointer;
+}
