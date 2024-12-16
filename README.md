@@ -14,3 +14,4 @@ This system addresses current inefficiencies and security issues related to inst
 -Gene A. Gomera
 -Ethil Jane D. Meliton
 -Chary Niel Q. Paderog
+-Intong, James Patrick
