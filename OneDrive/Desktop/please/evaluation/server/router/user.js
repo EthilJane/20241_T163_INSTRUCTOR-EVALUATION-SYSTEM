@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.userRouter = void 0;
+const express_1 = require("express");
+const checkAccessToken_1 = require("../middleware/checkAccessToken");
+const userController_1 = require("../controller/userController");
+const userRouter = (0, express_1.Router)();
+exports.userRouter = userRouter;
+userRouter.use(checkAccessToken_1.validateAccessToken);
+userRouter.get('/info', userController_1.getUserInfo);
+userRouter.get('/role', userController_1.getUserRole);
+userRouter.post('/logout', userController_1.logoutUser);
